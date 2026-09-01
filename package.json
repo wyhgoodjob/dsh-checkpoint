@@ -1,0 +1,37 @@
+{
+  "name": "dsh-checkpoint",
+  "version": "0.1.0",
+  "description": "Git-snapshot checkpoint/rollback capability for DeepSeek Harness: revert files and conversation to a previous completed turn.",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "checkpoint",
+    "rollback",
+    "snapshot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wyhgoodjob/dsh-checkpoint.git"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^1"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  }
+}
