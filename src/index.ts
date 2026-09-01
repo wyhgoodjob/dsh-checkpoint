@@ -1,11 +1,10 @@
 /**
  * dsh-checkpoint — git-snapshot checkpoint/rollback capability.
  *
- * NOTE: implementation scaffold. The exact service injection names, tool
- * registration shape, and event-append path are pinned during the first
- * coding pass (the "ignorable spike" named in README.md). Do not treat the
- * bodies below as final API — they record the plan against the harness
- * extension points researched in dsh-main-loop-sisyphus-spec.md.
+ * Implementation scaffold: the decisions, interface contract, pinned harness
+ * extension points, and the ordered task list live in README.md (§Interface
+ * contract, §Implementation order). The first coding pass is the ignorable
+ * spike (§Task 0); the bodies below record the plan, not the final API.
  */
 
 // The function-plugin export shape (per harness packages/AGENTS.md):
@@ -42,6 +41,4 @@ export function defineConfig(_defaults: Config): Config {
  *   5. `checkpoint_restore` = fork at the target turn/end + git restore + pre-revert
  *      self-snapshot (staged revert).
  */
-export function apply(_ctx: unknown, _config: Config): void {
-  // Implemented after sisyphus. Placeholder to make the package importable.
-}
+export function apply(_ctx: unknown, _config: Config): void {}
