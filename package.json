@@ -28,10 +28,15 @@
     "url": "git+https://github.com/wyhgoodjob/dsh-checkpoint.git"
   },
   "peerDependencies": {
-    "@deepseek-ai/cordis": "^1"
+    "@deepseek-ai/cordis": "*"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "typescript": "^5",
+    "vitest": "^3"
   }
 }
